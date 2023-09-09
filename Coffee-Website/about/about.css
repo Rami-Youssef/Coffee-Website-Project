@@ -1,0 +1,157 @@
+/*Fonts design*/
+   @font-face {
+        font-family: Graffonti ;
+        src: url(graffonti.3d.drop.[fontvir.us].ttf);
+    }
+    @font-face {
+        font-family: blackops;
+        src: url(BlackOpsOne-Regular.ttf);
+    }
+    @font-face {
+        font-family: finger;
+        src: url(FingerPaint-Regular.ttf);
+    }
+body{
+    background-image: url(about.jpg);
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+    font-family: blackops;
+    color: rgb(235, 198, 142);
+    height: 900px;
+    overflow: hidden;
+    
+}
+/*NAVIGATION*/
+    header{
+        position: fixed;
+        height: 150px;
+        width: 90%;
+        z-index: 2;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: white;
+    }
+    .logo img{
+        width: 150px;
+    }
+    .choice{
+        display: flex;
+        justify-content: space-evenly;
+        width: 20%;
+        justify-self: center;
+        font-size: 30px;
+    }
+    a{
+        text-decoration: inherit;
+        color: inherit;
+    }
+    .choice div{
+        margin: 20%;
+    }
+    Section a:hover{
+    text-decoration: underline;
+    color: rgb(161, 158, 158);
+    }
+    .logo{
+        margin-right: 22%;
+    }
+    .about{
+        color: rgb(133, 129, 129);
+        text-decoration: underline;
+    }
+/*Main*/
+    main{
+        position: relative;
+        top: 25%;
+    }
+    /*Title*/
+        main h1{  
+            color: white;
+            text-align: center;
+            font-family: Graffonti;
+            font-size: 700%;
+
+        }
+    /*two section*/
+        main section{
+            font-family: finger;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            text-shadow: 10px 5px black;
+            
+        }
+        main section div{
+            width: 40%;
+            align-self: center;
+            height: 40%;
+            
+        }
+        section h2{
+            font-family: blackops;
+            font-size: 200%;
+            
+
+        }
+        main section span{
+            color: white;
+        }
+        main section a:hover{
+            text-decoration: none;
+        }
+        .spray1{
+            border: solid 3px black;
+            box-shadow: -15px 10px 5px black;
+        }
+        .spray2{
+            border: solid 3px black;
+            box-shadow: 15px 10px 5px black ;
+        }
+        main a{
+            color: white;
+            text-decoration:none ;
+        }
+/*scroll-bar design*/
+    .spray1::-webkit-scrollbar { 
+        width: 20px;
+        background-color: rgb(150, 148, 148);
+    }
+    
+    .spray1::-webkit-scrollbar-thumb {
+    background-color: rgb(68, 64, 64);
+    border-radius: 10%;
+    }
+
+    .spray1::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    }
+/*Media*/
+    @media screen and (max-width:1005px) {
+        /*Navigation Media*/
+            .choice{
+                font-size: 20px;
+            }
+            .logo img{
+                width: 150px;
+                margin-left: -15%;
+            }
+        /*main*/
+            main h1{
+                font-size: 400%;
+            }
+            main section div{
+                height: 300px;
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
+            main section h2{
+                font-size: 150%;
+
+            }
+            main section h3{
+                font-size: 15px;
+            }
+
+        }
