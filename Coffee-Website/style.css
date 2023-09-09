@@ -1,0 +1,209 @@
+@font-face {
+    font-family: pacifico;
+    src: url(font/Pacifico.ttf);
+}
+body{
+    
+    background-color: #E6DECA;
+    font-family: pacifico;
+    overflow-x: hidden;
+}
+/*NAVIGATION*/
+    header{
+        position: fixed;
+        height: 150px;
+        width: 90%;
+        z-index: 4;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: white;
+    }
+    .logo img{
+        width: 150px;
+    }
+    .choice{
+        display: flex;
+        justify-content: space-evenly;
+        width: 20%;
+        justify-self: center;
+        font-size: 30px;
+    }
+    a{
+        text-decoration: inherit;
+        color: inherit;
+    }
+    .choice div{
+        margin: 20%;
+    }
+    Section a:hover{
+       text-decoration: underline;
+       color: gold;
+       opacity: 1;
+
+    }
+    .logo{
+        margin-right: 22%;
+    }
+    .home{
+        color: #bc9c22;
+        text-decoration: underline;
+    }
+/*MAIN*/
+    .coffee{
+        height: 971px ;
+        margin: -10px;
+        background-image: url(background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        position: relative;
+    }
+    /*Words*/
+        .text1{
+            color: #bc9c22;
+            position: absolute;
+            height: 40%;
+            z-index: 2;
+            width: 200%;
+            top: 30%;
+            left: 50%;
+            flex-wrap: wrap;
+        }
+        #one{
+            font-size: 500%;
+        }
+        #two{
+            font-size: 200%;
+            color: white;
+        }
+        #three{
+            padding-left: 50px; 
+            font-size: 350%; 
+            color: #38220f; 
+        }
+        #four{
+            font-size: 300%;
+            color: white;
+        }
+    /*side-bar*/
+        aside{
+            background-color: ;
+            width: 10%;
+            display: flex;
+            flex-wrap: wrap;
+            position: absolute;
+            top: 30%;
+            left: 2%;
+        }
+        aside div{
+            
+            border: 3px solid;
+            margin: 5%;
+
+            margin-top: -6%;
+            background-color: #e6decab0;
+            border-radius: 25%;
+            transition: background-color 0.5s;
+        }
+        aside div:hover{
+            background-color: white;
+            
+        }
+/*Footer*/
+    footer{
+        height: 3160px;
+        background-image: url(wood0.jpg);
+        margin: -1%;
+        position: relative;
+    }
+    /*Article*/
+        article{
+            display: flex;
+            position: absolute;
+            top: 5%;
+            color: white;
+            justify-content: space-around;
+        }
+        article img{
+            margin-left: 20%;
+            border: 5px solid black;
+            box-shadow: 10px 10px black;
+            width: 30%;
+            height: 30%;
+        }
+        article div{
+            width: 30%;
+            height: 100%;
+        }
+        article div h1{
+            color: #bc9c22;
+            font-size: 300%;
+            height: 50%;
+        }
+        article p{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 220%;
+            height: 50%;
+        }
+        .two{
+            top: 25%;
+            margin-left: -6%;
+        }
+        .two img,.four img{
+            box-shadow: -10px 10px black;
+            margin-left: 0%;
+           
+            
+        }
+        .three{
+            top: 45%;
+        }
+        .four{
+            top: 65%;
+            margin-left: -6%;
+        }
+/*MEDIA*/
+        
+        @media screen and (max-width:1129px) {
+            /*Navigation Media*/
+                .choice{
+                    font-size: 20px;
+                }
+                .logo img{
+                    width: 150px;
+                    margin-left: -15%;
+                }
+            /*Footer Media*/
+                article img{
+                    width: 30%;
+                }
+                article div{
+                    width: 30%;
+                }
+                article div h1{
+                    font-size: 200%;
+                }
+                article p{
+                    font-size: 150%;
+                }
+            /*Main Media*/
+                .text1{
+                    left: 20%;
+                }
+                #one{
+                    font-size: 340%;
+                }
+                #two{
+                    font-size: 150%;
+                }
+                #three{
+                    padding-left: 50px; 
+                    font-size: 300%;  
+                }
+                #four{
+                    font-size: 250%;
+                }
+
+        }
+            
